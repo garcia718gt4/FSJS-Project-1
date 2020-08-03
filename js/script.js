@@ -45,7 +45,22 @@ let quotes = [
     citation:'The Avengers',
     year: '2012',
     tag:'humor'
+  },
+
+  {
+    quote: 'If opportunity doesn’t knock, build a door.',
+    source:'Milton Berle',
+    citation:'',
+    tag:'humor'
+  },
+
+  {
+    quote: 'People may hate you for being different and not living by society’s standards, but deep down they wish they had the courage to do the same.',
+    source:'Kevin Heart',
+    citation:'',
+    tag:'humor'
   }
+
 ];
 
 
@@ -111,6 +126,11 @@ bgColor.addEventListener('click', () => {
   print quote button
 ***/
 
-document.getElementById('load-quote').addEventListener("click", () => {
-  printQuote(); 
-}); 
+// document.getElementById('load-quote').addEventListener("click", () => {
+//   printQuote(); 
+// }); 
+
+setInterval(() => {
+  body.style.backgroundColor = randomRGB(randomValue);
+  printQuote();
+}, 5000); 

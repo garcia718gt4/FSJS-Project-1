@@ -38,11 +38,12 @@ h1 {
   border-radius: 4px;
   border: 2px solid rgba(0, 0, 0, 0.3);
   transition: 0.5s;
+  cursor: initial;
 }
-
-.load-quote:hover {
+ 
+/* .load-quote:hover {
   background-color: rgba(255, 255, 255, 0.1);
-}
+} */
 
 .load-quote:focus {
   outline: none;
